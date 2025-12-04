@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Identity Map</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Lea Wilhelmer – Identity Map</h1>
+      <p>
+        Places, memories, and the story of moving from Austria to California.
+      </p>
+    </header>
+
+    <main>
+      <div id="map-container">
+        <div
+          class="pin"
+          style="top: 40%; left: 45%"
+          data-title="Austria"
+          data-text="Where I grew up — mountains, cold winters, German language, and childhood memories."
+          data-img="images/austria.jpg"
+        ></div>
+
+        <div
+          class="pin"
+          style="top: 70%; left: 25%"
+          data-title="California"
+          data-text="Moving here at 19 changed everything — independence, English, and a new identity."
+          data-img="images/california.jpg"
+        ></div>
+      </div>
+
+      <div id="memory-box" class="hidden">
+        <img id="memory-img" src="" alt="" />
+        <h2 id="memory-title"></h2>
+        <p id="memory-text"></p>
+        <button id="close-btn">Close</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
