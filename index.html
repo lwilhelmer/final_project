@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Identity Map</title>
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
-    <script src="sketch.js"></script>
   </head>
   <body>
     <header>
@@ -20,36 +18,47 @@
       <div id="map-container">
         <img id="map-img" src="images/map.jpg" alt="Map" />
 
+        <!-- Austria Pin -->
         <div
           class="pin"
-          style="top: 11%; left: 53%"
+          style="top: 21%; left: 53%"
           data-title="Austria"
           data-text="Where I grew up — mountains, cold winters, German language."
           data-img="images/austria.jpg"
+          data-audio="music/austria-song.mp3"
         ></div>
 
+        <!-- California Pin -->
         <div
           class="pin"
-          style="top: 13%; left: 16%"
+          style="top: 25%; left: 16%"
           data-title="California"
           data-text="Moving here at 19 — independence and a new identity."
           data-img="images/california.jpg"
+          data-audio="music/california.mp3"
         ></div>
 
+        <!-- Cabo Pin -->
         <div
           class="pin"
-          style="top: 17.5%; left: 19.5%"
+          style="top: 35%; left: 19%"
           data-title="Cabo San Lucas"
           data-text="One of my favorite vacation spots"
           data-img="images/cabo.jpg"
+          data-audio="music/mexican-song.mp3"
         ></div>
       </div>
 
-
+      <!-- Memory Box -->
       <div id="memory-box" class="hidden">
         <img id="memory-img" src="" alt="" />
         <h2 id="memory-title"></h2>
         <p id="memory-text"></p>
+
+        <!-- Play/Pause buttons for audio -->
+        <button id="play-audio-btn" class="hidden">Play Audio</button>
+        <button id="pause-audio-btn" class="hidden">Pause Audio</button>
+
         <button id="close-btn">Close</button>
       </div>
     </main>
