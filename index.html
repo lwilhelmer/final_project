@@ -10,15 +10,14 @@
     <header>
       <h1>Lea Wilhelmer – Identity Map</h1>
       <p>
-        Places, memories, and the story of moving from Austria to California.
+        Places, memories, and the story of moving from Austria to California. Add your own pin by clicking on a spot on the map!
       </p>
     </header>
 
     <main>
       <div id="map-container">
         <img id="map-img" src="images/map.jpg" alt="Map" />
-
-        <!-- Austria Pin -->
+        <!-- Pre-existing pins -->
         <div
           class="pin"
           style="top: 21%; left: 53%"
@@ -27,8 +26,6 @@
           data-img="images/austria.jpg"
           data-audio="music/austria-song.mp3"
         ></div>
-
-        <!-- California Pin -->
         <div
           class="pin"
           style="top: 25%; left: 16%"
@@ -37,8 +34,6 @@
           data-img="images/california.jpg"
           data-audio="music/california.mp3"
         ></div>
-
-        <!-- Cabo Pin -->
         <div
           class="pin"
           style="top: 35%; left: 19%"
@@ -54,12 +49,25 @@
         <img id="memory-img" src="" alt="" />
         <h2 id="memory-title"></h2>
         <p id="memory-text"></p>
-
-        <!-- Play/Pause buttons for audio -->
         <button id="play-audio-btn" class="hidden">Play Audio</button>
         <button id="pause-audio-btn" class="hidden">Pause Audio</button>
-
         <button id="close-btn">Close</button>
+      </div>
+
+      <!-- Pin Form -->
+      <div id="pin-form" class="hidden">
+        <h3>Add / Edit Pin</h3>
+        <label>Title:</label>
+        <input type="text" id="pin-title" />
+        <label>Text:</label>
+        <textarea id="pin-text"></textarea>
+        <label>Image:</label>
+        <input type="file" id="pin-img-file" accept="image/*" />
+        <label>Audio URL (optional):</label>
+        <input type="text" id="pin-audio" placeholder="music/example.mp3" />
+        <button id="save-pin-btn">Save Pin</button>
+        <button id="delete-pin-btn">Delete Pin</button>
+        <button id="cancel-pin-btn">Cancel</button>
       </div>
     </main>
 

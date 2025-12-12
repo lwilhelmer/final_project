@@ -13,6 +13,7 @@ header {
   position: relative;
   width: 80%;
   margin: 20px auto;
+  cursor: url("../images/pin-cursor.png"), pointer; /* Custom pin cursor */
 }
 
 #map-img {
@@ -22,18 +23,24 @@ header {
   border-radius: 12px;
 }
 
-.pin {
+.pin,
+.user-pin {
   width: 18px;
   height: 18px;
   background: red;
   border-radius: 50%;
   position: absolute;
-  cursor: pointer;
   transform: translate(-50%, -50%);
   border: 2px solid white;
+  cursor: pointer;
 }
 
-#memory-box {
+.user-pin {
+  background: #e84a64; /* pastel pink for user pins */
+}
+
+#memory-box,
+#pin-form {
   width: 300px;
   padding: 20px;
   background: #fff;
@@ -42,8 +49,32 @@ header {
   position: fixed;
   top: 20px;
   right: 20px;
+  z-index: 10;
+}
+
+#memory-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .hidden {
   display: none;
+}
+
+#pin-form input,
+#pin-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#pin-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#pin-form button {
+  margin-top: 5px;
+  margin-right: 5px;
 }
