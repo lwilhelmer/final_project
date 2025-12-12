@@ -13,7 +13,7 @@ header {
   position: relative;
   width: 80%;
   margin: 20px auto;
-  cursor: url("../images/pin-cursor.png"), pointer; /* Custom pin cursor */
+  cursor: url("../images/pin-cursor.png"), pointer;
 }
 
 #map-img {
@@ -36,7 +36,7 @@ header {
 }
 
 .user-pin {
-  background: #e84a64; /* pastel pink for user pins */
+  background: #e84a64; 
 }
 
 #memory-box,
